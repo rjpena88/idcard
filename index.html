@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>ID Card Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand" rel="stylesheet">
+    </head>
+<body>
+
+    <h1> Let's Create an ID Card!</h1>
+
+    <div id="input">
+<!-- Data entry section -->
+        First Name:<br>
+        <input type="text" id="firstName"
+        placeholder="First Name"><br>
+
+        Last Name:<br>
+        <input type="text" id="lastName"
+        placeholder="Last Name"><br>
+
+        Age:<br>
+        <input type="age" id="Age"
+        placeholder="Age"><br>
+
+        Phone Number:<br>
+        <input type="tel" id="phoneNumber"
+        placeholder="Phone Number"><br>
+
+        Address:<br>
+        <input type="address" id="Address"
+        placeholder="Address"><br><br>
+
+        <button onclick="idCard()">Get ID Card!</button><br><br>
+
+    </div>
+    <div id="idCard">
+        <img class="img1"  src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/profle-512.png" alt="Avatar" style="width:30%"><br>
+        <img class="img2" src="http://www.valleytechnicalacademy.com/wp-content/uploads/2017/10/VTA-logo-w-300.png" alt="Avatar" style="width:40%"><br>
+<!--Id card output is placed here -->
+    <div class="output">
+        <div><span id="cardName"></span><span id="cardLastName"></span></div><br>
+        <div>Age:<span id="cardAge"> </span> </div><br>
+        <div>Phone Number:<span id="cardNumber"></span></div><br>
+        <div>Address:<span id="cardAddress"></span></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
